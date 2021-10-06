@@ -1,0 +1,12 @@
+{$Using}
+
+namespace {$NamespaceName}
+{
+
+    public partial class {$ClassName}
+    {   
+        
+    
+    }
+
+}

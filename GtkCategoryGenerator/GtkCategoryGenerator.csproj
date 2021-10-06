@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="**\*.glade" />
+        <EmbeddedResource Include="**\*.glade">
+            <LogicalName>%(Filename)%(Extension)</LogicalName>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="GtkSharp" Version="3.24.24.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Utility2\clsClipboard.cs">
+        <Link>Utility\clsClipboard.cs</Link>
+      </Compile>
+      <Compile Update="Utility2\clsUtility.cs">
+        <Link>Utility\clsUtility.cs</Link>
+      </Compile>
+      <Compile Update="File2\clsFile+static.cs">
+        <Link>File\clsFile+static.cs</Link>
+      </Compile>
+      <Compile Update="File2\clsFolder+static.cs">
+        <Link>File\clsFolder+static.cs</Link>
+      </Compile>
+      <Compile Update="File2\clsPath.cs">
+        <Link>File\clsPath.cs</Link>
+      </Compile>
+      <Compile Update="ExtensionsClass2\clsExtensionsArrayDic.cs">
+        <Link>ExtensionsClass\clsExtensionsArrayDic.cs</Link>
+      </Compile>
+      <Compile Update="ExtensionsClass2\clsExtensionsObject.cs">
+        <Link>ExtensionsClass\clsExtensionsObject.cs</Link>
+      </Compile>
+      <Compile Update="ExtensionsClass2\clsExtensionsString.cs">
+        <Link>ExtensionsClass\clsExtensionsString.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="categoryTemplate.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
