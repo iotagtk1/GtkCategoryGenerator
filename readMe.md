@@ -1,4 +1,4 @@
-********### GtkCategoryGenerator
+### GtkCategoryGenerator
 
 This tool copies the CS file and automatically generates the partial class. 
 Copy the string for the partial class name. 
