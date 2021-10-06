@@ -49,4 +49,11 @@
       </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="..\readMe.md">
+        <Link>readMe.md</Link>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
